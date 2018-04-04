@@ -1,4 +1,4 @@
-import os,subprocess,pytesseract
+import os,subprocess,pytesseract,fuzzywuzzy
 
 from PIL import Image,ImageFilter,ImageEnhance
 from send2trash import send2trash
