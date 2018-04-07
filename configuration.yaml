@@ -11,14 +11,10 @@ data:
      - Invoice No
      - Receipt No
      - Number
-     - number
   invoice_date:
      - Invoice Date
-     - Date
   total:
      - Total
-     - Subtotal
-     - Balance
   due:
      - Due Date
   sender:
