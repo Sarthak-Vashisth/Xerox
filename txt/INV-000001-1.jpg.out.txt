@@ -1,6 +1,8 @@
-3155': INVOICE
+SINGER
 
-Invoice# lNV-000001
+INVOICE
+
+|nvoice# lNV-000001
 
  
 
@@ -10,16 +12,15 @@ Invoice# lNV-000001
 
 Balance Due
 $286,000.00
-Bi” T01 Invoice Date: 29 Mar 2018
+Bi” T03 Invoice Date: 29 Mar 2018
 IAS Solutions (pvt) Ltd
-No 64, 47th lane Terms: Due 0n Receipt
-Colombo 04 .
+No 64, 47th lane Terms : Due On Receipt
+Colombo 04 _
 Srilanka Due Date. 29 Mar 2018
-i
-# Item Description ! Qty Rate Amount
-1 Laptop 2.00 100,0000 200,000.00
+# Item Description Qty Rate Amount
+1 Laptop 2.00 1000000 200,000.00
 0
-2 Computer Chair 100 10,000.00 10,000.00
+2 Computer Chair 1.00 10,000.00 10,000.00
 3 Air Conditioner 1.00 50,000.00 50,000.00
 Sub Total 260,000.00
 Sales Tax (10%) (10%) 26,000.00
@@ -31,4 +32,4 @@ It was great doing business with you.
 
 Terms & Conditions
 
-Please make the payment bythe due date.
+Please make the payment by the due date.

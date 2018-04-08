@@ -10,11 +10,6 @@ OUTPUT_FOLDER = os.path.join(THIS_FOLDER, "txt")
 
 
 def prepare_folders():
-    """
-    :return: void
-        Creates necessary folders
-    """
-
     for folder in [
         INPUT_FOLDER, TMP_FOLDER, OUTPUT_FOLDER
     ]:
@@ -23,13 +18,6 @@ def prepare_folders():
 
 
 def find_images(folder):
-    """
-    :param folder: str
-        Path to folder to search
-    :return: generator of str
-        List of images in folder
-    """
-
     for file in os.listdir(folder):
         full_path = os.path.join(folder, file)
         if os.path.isfile(full_path):
@@ -85,40 +73,16 @@ def rotate_and_convert_image(input_file, output_file, angle=0):
 
 
 def sharpen_image(input_file, output_file):
-    """
-    :param input_file: str
-        Path to image to prettify
-    :param output_file: str
-        Path to output image
-    :return: void
-        Prettifies image and saves result
-    """
-
     rotate_and_convert_image(input_file, output_file)  # rotate
     file_name, file_extention = os.path.splitext(input_file)
     if file_extention.upper() == ".pdf".upper():
         pass
     else:
         image_obj_to_sharp = create_image_obj(input_file);
-        enhancer = ImageEnhance.Sharpness(image_obj_to_sharp)
+        enhancer = ImageEnhance.Sharpness(image_obj_to_sharp.convert('RGB'))
         enhancer.enhance(2).save(output_file)
-    #image_obj_to_sharp.filter(ImageFilter.SHARPEN);
-    # cmd = "convert -auto-level -sharpen 0x4.0 -contrast "
-    # cmd += "'" + output_file + "' '" + output_file + "'"
-    # print("Running", cmd)
-    # os.system(cmd)  # sharpen
-
 
 def run_tesseract(input_file, output_file):
-    """
-    :param input_file: str
-        Path to image to OCR
-    :param output_file: str
-        Path to output file
-    :return: void
-        Runs tesseract on image and saves result
-    """
-
     # cmd = "tesseract -psm 2 "
     # cmd += "\"" + input_file + "\"" +" "+ "\"" + output_file + "\""
     # print("Running", cmd)
