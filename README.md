@@ -20,9 +20,10 @@ As this project is still in current development, lots of features are going to b
     * fuzzywuzzy
     
 ### How To Run:
-1. Run Extract.py using ```python Extract.py``` in command line. 
+1. Put image files (jpeg, jpg or png) in img folder. 
+2. Run Extract.py using ```python Extract.py``` in command line. 
     * This command will extract text from images(jpeg,jpg and png are currently supported) and store that text in txt folder.
-2. Run find_and_parse.py using ```python find_and_parse.py``` in command line.
+3. Run find_and_parse.py using ```python find_and_parse.py``` in command line.
     * This command parses the text from text files and stores the result in MySQL database.
 
 ## Future Plans for the project
