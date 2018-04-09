@@ -1,0 +1,12 @@
+Tools:
+    - Python 2.7
+    - Tessaract OCR Version 3.05.01
+    - MySQL
+Python Libraries:
+    - PyMySQL
+    - pytesseract
+    - send2trash
+    - pillow
+    - PyYAML
+    - fuzzywuzzy
+

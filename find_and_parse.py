@@ -1,3 +1,19 @@
+# coding: utf-8
+# Copyright 2018-2020 @ Sarthak Vashisth
+#Released under the GNU General Public License
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 import os,db_layer
 import re
 import time
@@ -7,7 +23,7 @@ from fuzzywuzzy import process,fuzz
 
 import yaml
 
-from objectview import ObjectView
+from ObjectState import ObjectState
 
 THIS_FOLDER = os.getcwd()
 
@@ -108,7 +124,7 @@ class Invoice_parser:
 def read_meta_file(file="configuration.yaml"):
     stream = open(os.path.join(THIS_FOLDER, file), "r")
     docs = yaml.safe_load(stream)
-    return ObjectView(docs)
+    return ObjectState(docs)
 
 def get_files_in_folder(folder, include_hidden=False):
     files = os.listdir(folder)
