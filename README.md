@@ -35,3 +35,8 @@ As this project is still in current development, lots of features are going to b
     
 ## Bugs and Fixes:
 As Application is in current development, code enhancement and changes is currently going on. Bugs fixes is in ongoing state. The Application is stable as tested in Local Machine. Please Read Instructions before use.
+
+## Contact
+Original Author: Sarthak Vashisth  
+Email: sarthakvashisth@outlook.com  
+Blog: https://twikkie.wordpress.com
