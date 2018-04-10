@@ -128,9 +128,9 @@ class Invoice_parser:
             if ':' in str_data:
                 due_date = str_data.split(':')[1].strip(' ');
                 if ',' in due_date:
-                    self.json_data['invoice_date'] = ''.join(due_date.split(','))
+                    self.json_data['due_date'] = ''.join(due_date.split(','))
                 else:
-                    self.json_data['invoice_date'] = str_data.split(':')[1].strip(' ');
+                    self.json_data['due_date'] = str_data.split(':')[1].strip(' ');
             else:
                 self.json_data['due_date'] = 'NA';
 
